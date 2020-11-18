@@ -22,7 +22,7 @@ public class HeapSort {
         int k = arr.length - 1;
         while (k > 0) {
             // 将堆顶元素（最大）与最后一个元素交换位置
-            swap(arr, 0, k);
+            MyHeapSort.swap(arr, 0, k);
             // 将剩下元素重新堆化，堆顶元素变成最大元素
             heapify(arr, --k, 0);
         }

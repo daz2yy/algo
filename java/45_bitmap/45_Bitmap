@@ -1,0 +1,26 @@
+
+public class Bitmap {
+    private int capacity;
+    private char bitmap[];
+
+    public Bitmap(int cap) {
+        capacity = cap;
+        bitmap = new char[cap];
+    }
+
+    public void set(int k) {
+        // 漏写了范围判断
+        if (k > capacity) return;
+        int bitIndex = k / 16;
+        int bitValue = k % 16;
+        bitmap[bitIndex] |= 1 << bitValue;
+    }
+
+    public boolean get(int k) {
+        if (k > capacity) return false;
+        int bitIndex = k / 16;
+        int bitValue = k % 16;
+        Integer.parseInt("1");
+        return (bitmap[bitIndex] & (1 << bitValue)) != 0;
+    }
+}
