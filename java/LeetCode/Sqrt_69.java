@@ -1,4 +1,3 @@
-import jdk.javadoc.internal.doclets.formats.html.resources.standard;
 
 /**
  * 返回x的平方根，只要整数部分；30分钟，https://leetcode-cn.com/problems/sqrtx/

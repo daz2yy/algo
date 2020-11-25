@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import InverseTree_226.TreeNode;
-
 /**
  * 判断一棵树是否是二叉搜索树，15分钟
  * 1. 中序遍历
